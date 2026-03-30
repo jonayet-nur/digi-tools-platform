@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "description": "Perfect for beginners to create simple resumes",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "FaUser"
+  },
+  {
+    "id": 2,
+    "name": "Starter",
+    "description": "Good for students and freshers",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "20+ templates",
+      "Basic ATS optimization",
+      "Download PDF"
+    ],
+    "icon": "FaGraduationCap"
+  },
+  {
+    "id": 3,
+    "name": "Standard Plan",
+    "description": "Best for job seekers with more customization options",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "50+ templates",
+      "ATS optimization",
+      "Multiple formats",
+      "Email support"
+    ],
+    "icon": "FaStar"
+  },
+  {
+    "id": 4,
+    "name": "Pro Plan",
+    "description": "Advanced tools for professionals",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "80+ templates",
+      "Advanced ATS",
+      "Custom sections",
+      "Priority email support"
+    ],
+    "icon": "FaRocket"
+  },
+  {
+    "id": 5,
+    "name": "Premium Plan",
+    "description": "All-in-one solution for career growth",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "100+ templates",
+      "Advanced ATS optimization",
+      "Priority support",
+      "Custom branding"
+    ],
+    "icon": "FaCrown"
+  },
+  {
+    "id": 6,
+    "name": "Pro Annual",
+    "description": "Save more with yearly subscription",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "All premium features",
+      "Unlimited downloads",
+      "Priority support",
+      "LinkedIn optimization"
+    ],
+    "icon": "FaCalendar"
+  },
+  {
+    "id": 7,
+    "name": "Business Plan",
+    "description": "Perfect for small teams",
+    "price": 149.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Team access",
+      "Shared templates",
+      "Admin tools",
+      "Priority support"
+    ],
+    "icon": "FaBriefcase"
+  },
+  {
+    "id": 8,
+    "name": "Enterprise",
+    "description": "For large organizations and companies",
+    "price": 299.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Unlimited team members",
+      "Custom branding",
+      "Dedicated manager",
+      "24/7 support"
+    ],
+    "icon": "FaBuilding"
+  }
+]
