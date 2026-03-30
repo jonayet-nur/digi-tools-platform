@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
@@ -12,6 +12,8 @@ const fetchProduct = async()=>{
 const res = await fetch("card.json")
 return res.json()
 }
+//ata buy now te click korle koy ta click hoyce ata dekar jonno
+
 function App() {
   const productPromise = fetchProduct()
   return (
@@ -20,7 +22,13 @@ function App() {
      <Banner></Banner>
     <Stats></Stats>
 
-    <Suspense>
+    <Suspense fallback={<div className='flex justify-center items-center gap-5 min-h-screen'>
+      <span className="loading loading-ring loading-xs"></span>
+<span className="loading loading-ring loading-sm"></span>
+<span className="loading loading-ring loading-md"></span>
+<span className="loading loading-ring loading-lg"></span>
+<span className="loading loading-ring loading-xl"></span>
+     </div>}>
       <ProductSection productPromise={productPromise}></ProductSection>
       
     </Suspense>

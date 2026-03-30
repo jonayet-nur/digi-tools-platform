@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { 
   FaUser, FaStar, FaCrown, FaRocket,
   FaBuilding, FaGraduationCap, FaCalendar, FaBriefcase 
@@ -16,6 +16,7 @@ const icons = {
 };
 const Card = ({ singleCard}) => {
      const Icon = icons[singleCard.icon];
+     const[isBuy,setIsBuy] =useState(false)
   return (
    <div className="card  bg-base-100 shadow-sm ">
   <div className="card-body  ">
@@ -41,7 +42,7 @@ const Card = ({ singleCard}) => {
       
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block rounded-4xl">Buy Now</button>
+      <button onClick={()=> setIsBuy(true)} className={`btn  btn-block rounded-4xl ${isBuy? "btn-success":"btn-primary"}`}>{isBuy=== true?"Purchased":"Buy Now"}</button>
     </div>
   </div>
 </div>
