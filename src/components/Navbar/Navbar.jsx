@@ -4,7 +4,7 @@ import { FiShoppingCart } from 'react-icons/fi'
 const Navbar = () => {
    
   return (
-    <nav className='bg-white shadow-xl p-4 sticky top-0'>
+    <nav className='bg-white shadow-xl p-4 sticky top-0 z-50'>
         <div className='container mx-auto'>
             <div className='flex justify-between items-center '>
                 {/*  nav logo left*/}

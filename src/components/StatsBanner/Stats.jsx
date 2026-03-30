@@ -8,6 +8,7 @@ const Stats = () => {
  <div className="">
     <div className="font-extrabold text-5xl text-white">50K+</div>
     <div className="text-xl text-white">Active Users</div>
+   
   </div>
 
   <div className="">

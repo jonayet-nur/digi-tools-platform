@@ -22,7 +22,7 @@ function App() {
 
     <Suspense>
       <ProductSection productPromise={productPromise}></ProductSection>
-      <Card></Card>
+      
     </Suspense>
     </>
   )

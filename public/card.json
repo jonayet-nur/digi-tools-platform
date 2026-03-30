@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "Standard Plan",
-    "description": "Best for job seekers with more customization options",
+    "description": "Best for job seekers with more customization ",
     "price": 9.99,
     "period": "monthly",
     "tag": "popular",
@@ -40,8 +40,8 @@
     "features": [
       "50+ templates",
       "ATS optimization",
-      "Multiple formats",
-      "Email support"
+      "Multiple formats"
+     
     ],
     "icon": "FaStar"
   },
