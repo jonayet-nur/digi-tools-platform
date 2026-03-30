@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import Stats from './components/StatsBanner/Stats'
 import ProductSection from './components/ProductSection/ProductSection'
+import Card from './components/ui/Card'
 
 
 const fetchProduct = async()=>{
@@ -21,6 +22,7 @@ function App() {
 
     <Suspense>
       <ProductSection productPromise={productPromise}></ProductSection>
+      <Card></Card>
     </Suspense>
     </>
   )
