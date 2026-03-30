@@ -1,13 +1,17 @@
 
 import './App.css'
+import Banner from './components/Banner/Banner'
+import Navbar from './components/Navbar/Navbar'
+import Stats from './components/StatsBanner/Stats'
 
 function App() {
   
 
   return (
     <>
-     <h2 className='text-2xl text-red-700 bg-blue-300'>Hello world!</h2>
-     <button className="btn btn-neutral">Neutral</button>
+     <Navbar></Navbar>
+     <Banner></Banner>
+    <Stats></Stats>
     </>
   )
 }
