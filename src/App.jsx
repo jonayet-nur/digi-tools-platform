@@ -6,19 +6,27 @@ import Navbar from './components/Navbar/Navbar'
 import Stats from './components/StatsBanner/Stats'
 import ProductSection from './components/ProductSection/ProductSection'
 import Card from './components/ui/Card'
+import { ToastContainer } from 'react-toastify'
+import StepCard from './components/StepCartSection/StepCard'
+import Transparent from './components/TransparentCard/Transparent'
+import Footer from './components/Footer/Footer'
 
 
 const fetchProduct = async()=>{
 const res = await fetch("card.json")
 return res.json()
 }
-//ata buy now te click korle koy ta click hoyce ata dekar jonno
+
 
 function App() {
+  //ata buy now te click korle koy ta click hoyce ata dekar jonno
+  const [selectcartshow,setSelectedCartShow]= useState([])
+
   const productPromise = fetchProduct()
   return (
     <>
-     <Navbar></Navbar>
+    
+     <Navbar selectcartshow={selectcartshow}></Navbar>
      <Banner></Banner>
     <Stats></Stats>
 
@@ -29,9 +37,12 @@ function App() {
 <span className="loading loading-ring loading-lg"></span>
 <span className="loading loading-ring loading-xl"></span>
      </div>}>
-      <ProductSection productPromise={productPromise}></ProductSection>
-      
+      <ProductSection productPromise={productPromise} setSelectedCartShow={setSelectedCartShow}  selectcartshow = {selectcartshow} ></ProductSection>
     </Suspense>
+    <StepCard></StepCard>
+    <Transparent></Transparent>
+    <Footer></Footer>
+    <ToastContainer></ToastContainer>
     </>
   )
 }

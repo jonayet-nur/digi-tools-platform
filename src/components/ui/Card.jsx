@@ -1,3 +1,4 @@
+import { ToastContainer, toast } from 'react-toastify';
 import React, { useState } from 'react'
 import { 
   FaUser, FaStar, FaCrown, FaRocket,
@@ -14,14 +15,23 @@ const icons = {
   FaCalendar,
   FaBriefcase
 };
-const Card = ({ singleCard}) => {
+const Card = ({ singleCard,setSelectedCartShow,selectcartshow,productPrice,setProductPrice}) => {
      const Icon = icons[singleCard.icon];
      const[isBuy,setIsBuy] =useState(false)
+
+console.log(selectcartshow)
+     const handleChooseCart = ()=> { 
+const newprice=( productPrice+singleCard.price)
+setProductPrice(newprice)
+  setIsBuy(true)
+  setSelectedCartShow([...selectcartshow, singleCard])
+  toast.success(`${singleCard.name} are Selected`);
+  }
   return (
    <div className="card  bg-base-100 shadow-sm ">
   <div className="card-body  ">
     <div className='flex justify-between'>
-       <span>{Icon && <Icon />}</span>
+       <span>{Icon &&  <Icon />}</span>
 
         <span className={`badge badge-xm ${singleCard.tagType==="new" ? "badge-warning":""} ${singleCard.tagType==="popular" ? "badge-info":""} ${singleCard.tagType==="best" ? "badge-success":""}`}>{singleCard.tagType}</span>
     </div>
@@ -42,7 +52,7 @@ const Card = ({ singleCard}) => {
       
     </ul>
     <div className="mt-6">
-      <button onClick={()=> setIsBuy(true)} className={`btn  btn-block rounded-4xl ${isBuy? "btn-success":"btn-primary"}`}>{isBuy=== true?"Purchased":"Buy Now"}</button>
+      <button onClick={handleChooseCart} className={`btn  btn-block rounded-4xl ${isBuy? "btn-success":"btn-primary"}`}>{isBuy=== true?"Purchased":"Buy Now"}</button>
     </div>
   </div>
 </div>
