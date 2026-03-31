@@ -4,10 +4,10 @@ import { FaFacebook, FaInstagram, FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-   <section className='bg-[#101727] p-10 my-5'>
-   <div className='w-10/12 mx-auto'>
+   <section className='bg-[#101727] p-30 my-5'>
+   <div className='container mx-auto'>
     
- <footer className="grid md:grid-cols-5 grid-cols-2 gap-5 ">
+ <footer className="grid md:grid-cols-5 grid-cols-1 gap-5 ">
     <div className='mr-10'>
         <h1 className=' text-white text-2xl font-bold '>DigiTools</h1>
         <p className='  text-[#ffffff9e] line-clamp-3 '>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
@@ -46,7 +46,7 @@ const Footer = () => {
    <hr className="h-0.5 bg-gray-600 border-none my-5" />
    <div className='text-gray-500 flex justify-between md:flex-row flex-col'>
     <p className='text-gray-500'> &copy; 2026 Digitools.All rights reserved.</p>
-   <div className=' flex gap-5 '>
+   <div className=' flex gap-5 md:block hidden'>
      <a href="">Privacy Policy </a>
     <a href=""> Terms of Service</a>
     <a href="">Cookies</a>

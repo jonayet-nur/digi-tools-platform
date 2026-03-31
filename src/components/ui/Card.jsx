@@ -37,7 +37,11 @@ setProductPrice(newprice)
     </div>
      <h2 className="text-3xl font-bold">{singleCard.name}</h2>
     <p className='text-[#627382]'>{singleCard.description}</p>
-      <span className="text-2xl font-bold">${singleCard.price}/{singleCard.period}</span>
+      <div>
+        <span className="text-2xl font-bold">${singleCard.price}/</span>
+        <span>{singleCard.period}</span>
+      </div>
+      
     
     <ul className="mt-2 flex flex-col gap-2 text-xs">
         {

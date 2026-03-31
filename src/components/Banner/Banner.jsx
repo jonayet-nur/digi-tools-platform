@@ -9,9 +9,11 @@ const Banner = () => {
         <div className='container mx-auto flex gap-10 items-center md:flex-row flex-col'>
             {/* banner left */}
             <div className='flex-1 space-y-5 ml-10'>
-              <div className="badge bg-[#E1E7FF] p-4 rounded-2xl text-[#627de1] font-semibold">
-            <span> New: AI-Powered Tools Available</span>
-          </div>
+             <div className='badge bg-purple-100 p-4 rounded-2xl'>
+              {/* outer circle */}
+              <div className='w-6 h-6 bg-purple-900 rounded-full opacity-20 relative md:block hidden'></div>
+              <div className='w-3 h-3 bg-purple-600 rounded-full opacity-70 md:absolute left-31.25 md:block hidden '></div><span className='text-purple-600 font-semibold '>New: AI-Powered Tools Available</span>
+             </div>
           <h2 className='font-bold text-4xl md:text-6xl text-[#101727]'>Supercharge Your <br></br>Digital Workflow</h2>
           <p className='text-[#627382]'>Access premium AI tools, design assets, templates, and productivity<br></br> software-all in one place. Start creating faster today.Explore Products</p>
           <button className='p-3 bg-[#4F39F6] rounded-3xl text-sm text-white hover:bg-purple-700 transition-colors font-medium'>Explore Products</button>
