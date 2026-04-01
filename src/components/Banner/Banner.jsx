@@ -20,8 +20,8 @@ const Banner = () => {
           <button className='btn btn-outline btn-info rounded-3xl ml-4'> <CiPlay1></CiPlay1> Watch Demo</button>
             </div >
             {/* banner right img */}
-            <div className=' object-cover flex justify-center md:mx-0 mx-4 '>
-                <img src={BannerImg} alt="" />
+            <div className=' object-cover flex justify-center md:mx-0 mx-4 group overflow-hidden rounded-2xl'>
+                <img src={BannerImg} alt="" className='' />
             </div>
 
         </div>

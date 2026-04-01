@@ -3,6 +3,22 @@ import React from 'react'
 import Card from '../ui/Card'
 import { MdDelete } from 'react-icons/md'
 
+
+import { 
+  FaUser, FaStar, FaCrown, FaRocket,
+  FaBuilding, FaGraduationCap, FaCalendar, FaBriefcase 
+} from "react-icons/fa";
+
+const icons = {
+  FaUser,
+  FaStar,
+  FaCrown,
+  FaRocket,
+  FaBuilding,
+  FaGraduationCap,
+  FaCalendar,
+  FaBriefcase
+};
 const SelectedCart = ({selectcartshow,setSelectedCartShow,productPrice,setProductPrice}) => {
     console.log(selectcartshow)
 
@@ -10,7 +26,7 @@ const SelectedCart = ({selectcartshow,setSelectedCartShow,productPrice,setProduc
         // console.log(cartedSelect,"delete work")
         const filterCart = selectcartshow.filter(removeCart=> removeCart.name != cartedSelect.name)
         setSelectedCartShow(filterCart)
-       
+        toast.info(` Remove are Successful`);
         //remove button click for total amount decrease
       setProductPrice(prev => {
   const newValue = prev - cartedSelect.price
@@ -22,7 +38,14 @@ const SelectedCart = ({selectcartshow,setSelectedCartShow,productPrice,setProduc
     const procedHandle =()=>{
         setProductPrice(0)
         setSelectedCartShow([])
-         toast.success(`Proceed are Successful`);
+if (selectcartshow.length === 0) {
+    toast.error("No cart selected");
+     
+}else{
+    toast.success(" Proceed Successful");
+}
+       
+         
     }
   return (
     
@@ -32,14 +55,15 @@ const SelectedCart = ({selectcartshow,setSelectedCartShow,productPrice,setProduc
           
           {
             selectcartshow.length===0?<div>
-            <h2 className='text-center font-semibold text-2xl'>No Cart available</h2>
+            <h2 className='text-center font-semibold text-2xl'>No product available</h2>
           </div>:
             selectcartshow.map(( cartedSelect) => {
+                const Icon = icons[cartedSelect.icon];
                 return <div  className='flex justify-between items-center border-2 border-gray-200  rounded-2xl p-5 shadow-gray-100 shadow-xl mt-3'>
             <div className='flex gap-6 '>
-            
+            <span className='md:text-3xl  text-blue-800 bg-white  border-2 border-gray-200 md:p-4 rounded-full text-xl  p-2'>{Icon &&  <Icon />}</span>
             <div >
-                <h2 className='font-bold text-2xl'> {cartedSelect.name}</h2>
+                <h2 className='font-bold md:text-2xl'> {cartedSelect.name}</h2>
                 <p className='text-gray-400'>$ {cartedSelect.price}</p>
             </div>
             </div>

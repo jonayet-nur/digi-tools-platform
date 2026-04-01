@@ -6,7 +6,7 @@ const StepCard = () => {
   return (
     <div className='bg-gray-100 grid  pb-8'>
         <div className='text-center mt-20 space-y-2 md:px-0 px-4'>
-            <h2 className='font-bold text-3xl'>Get Started in 3 Steps</h2>
+            <h2 className='font-bold md:text-5xl text-3xl'>Get Started in 3 Steps</h2>
             <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
         </div>
        {/* cart section */}
@@ -23,8 +23,8 @@ const StepCard = () => {
       className="rounded-full w-25 bg-purple-100 p-6" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Create Account</h2>
-    <p>Sign up for free in seconds. No credit card required to get started.</p>
+    <h2 className="card-title font-bold text-2xl">Create Account</h2>
+    <p className='text-[#627382]'>Sign up for free in seconds. No credit card required to get started.</p>
     
   </div>
 </div>
@@ -42,8 +42,8 @@ const StepCard = () => {
       className="rounded-full w-25 bg-purple-100 p-6" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Choose Products</h2>
-    <p className='w-2xs'>Browse our catalog and select the tools that fit your needs.</p>
+    <h2 className="card-title font-bold text-2xl">Choose Products</h2>
+    <p className='w-2xs text-[#627382]'>Browse our catalog and select the tools that fit your needs.</p>
     
   </div>
 </div>
@@ -60,8 +60,8 @@ const StepCard = () => {
       className="rounded-full w-25 bg-purple-100 p-6" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Start Creating</h2>
-    <p>Download and start using your premium tools immediately.</p>
+    <h2 className="card-title font-bold text-2xl">Start Creating</h2>
+    <p className='text-[#627382]'>Download and start using your premium tools immediately.</p>
   </div>
 
 </div>

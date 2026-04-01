@@ -4,8 +4,8 @@ const Transparent = () => {
   return (
    <div className='my-10'>
      <div className='text-center mt-20 space-y-2 mb-8 md:px-0 px-4'>
-            <h2 className='font-bold text-3xl'>Get Started in 3 Steps</h2>
-            <p className='text-[#627382] text-center '>Start using premium digital tools in minutes, not hours.</p>
+            <h2 className='font-bold md:text-5xl text-3xl'>Simple, Transparent Pricing</h2>
+            <p className='text-[#627382] text-center '>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>
 
     {/* card section pricing */}

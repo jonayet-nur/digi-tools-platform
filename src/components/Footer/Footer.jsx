@@ -13,24 +13,25 @@ const Footer = () => {
         <p className='  text-[#ffffff9e] line-clamp-3 '>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
     </div>
     <div className='flex flex-col text-[#ffffff9e]' >
-    <h6 className="text-white font-bold">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <h6 className="text-white font-bold">Product</h6>
+    <a className="link link-hover">Features</a>
+    <a className="link link-hover">Pricing</a>
+    <a className="link link-hover">Integrations</a>
+    <a className="link link-hover">Templates</a>
   </div>
   <div  className='flex flex-col   text-[#ffffff9e]'>
     <h6 className="text-white font-bold">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+    <a className="link link-hover">About </a>
+    <a className="link link-hover">Blog</a>
+    <a className="link link-hover">Careers</a>
+    <a className="link link-hover">Press</a>
   </div>
   <div  className='flex flex-col   text-[#ffffff9e]'>
-    <h6 className="text-white font-bold">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+    <h6 className="text-white font-bold">Resources</h6>
+    <a className="link link-hover">Documentation</a>
+    <a className="link link-hover">Help Center</a>
+    <a className="link link-hover">Community</a>
+    <a className="link link-hover">Contact</a>
   </div>
 
   <div className=' text-gray-600'>
@@ -46,7 +47,7 @@ const Footer = () => {
    <hr className="h-0.5 bg-gray-600 border-none my-5" />
    <div className='text-gray-500 flex justify-between md:flex-row flex-col'>
     <p className='text-gray-500'> &copy; 2026 Digitools.All rights reserved.</p>
-   <div className=' flex gap-5 md:block hidden'>
+   <div className=' md:grid md:grid-cols-3 gap-4 hidden'>
      <a href="">Privacy Policy </a>
     <a href=""> Terms of Service</a>
     <a href="">Cookies</a>

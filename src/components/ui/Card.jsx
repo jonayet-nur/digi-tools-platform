@@ -30,8 +30,8 @@ setProductPrice(newprice)
   return (
    <div className="card  bg-base-100 shadow-sm ">
   <div className="card-body  ">
-    <div className='flex justify-between'>
-       <span>{Icon &&  <Icon />}</span>
+    <div className='flex justify-between '>
+       <span className='text-4xl text-blue-800 bg-white border-2 border-gray-200 p-4 rounded-full'>{Icon &&  <Icon />}</span>
 
         <span className={`badge badge-xm ${singleCard.tagType==="new" ? "badge-warning":""} ${singleCard.tagType==="popular" ? "badge-info":""} ${singleCard.tagType==="best" ? "badge-success":""}`}>{singleCard.tagType}</span>
     </div>
