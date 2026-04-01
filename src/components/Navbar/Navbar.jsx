@@ -2,7 +2,7 @@ import React from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
 
 const Navbar = ({selectcartshow}) => {
-   console.log(selectcartshow.length)
+//    console.log(selectcartshow.length)
   return (
     <nav className='bg-white shadow-xl p-4 sticky top-0 z-50'>
         <div className='container mx-auto'>

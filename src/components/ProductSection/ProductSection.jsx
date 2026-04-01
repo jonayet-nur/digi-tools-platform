@@ -4,13 +4,13 @@ import AvailableCard from '../AvailableCard/AvailableCard'
 import SelectedCart from '../BuyNowCart/SelectedCart'
 
 const ProductSection = ({productPromise,setSelectedCartShow,selectcartshow}) => {
-    console.log(productPromise)
+    // console.log(productPromise)
     const cardData = use(productPromise)
-    console.log(cardData)
+    // console.log(cardData)
 
     //button toggoling
     const[selectButton,setSelectedButton]=useState("products")
-    console.log(selectButton)
+    // console.log(selectButton)
 
     //select cart price er jonno
     const[productPrice,setProductPrice]=useState(0)

@@ -19,14 +19,36 @@ const Card = ({ singleCard,setSelectedCartShow,selectcartshow,productPrice,setPr
      const Icon = icons[singleCard.icon];
      const[isBuy,setIsBuy] =useState(false)
 
-console.log(selectcartshow)
-     const handleChooseCart = ()=> { 
-const newprice=( productPrice+singleCard.price)
-setProductPrice(newprice)
-  setIsBuy(true)
-  setSelectedCartShow([...selectcartshow, singleCard])
-  toast.success(`${singleCard.name} are Selected`);
+// console.log(selectcartshow)
+
+//      const handleChooseCart = ()=> { 
+// const newprice=( productPrice+singleCard.price)
+// setProductPrice(newprice)
+//   setIsBuy(true)
+//   setSelectedCartShow([...selectcartshow, singleCard])
+//   toast.success(`${singleCard.name} are Selected`);
+//   }
+
+const handleChooseCart = () => {
+
+  const exists = selectcartshow.find(
+    (item) => item.name === singleCard.name
+  );
+
+  if (exists) {
+    toast.error("Already added this item!");
+    return;
   }
+
+  const newprice = productPrice + singleCard.price;
+  setProductPrice(newprice);
+setIsBuy(true)
+  setSelectedCartShow([...selectcartshow, singleCard]);
+
+  toast.success(`${singleCard.name} added successfully`);
+};
+
+
   return (
    <div className="card  bg-base-100 shadow-sm ">
   <div className="card-body  ">
