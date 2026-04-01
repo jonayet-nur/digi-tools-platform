@@ -16,7 +16,7 @@ const Banner = () => {
              </div>
           <h2 className='font-bold text-4xl md:text-6xl text-[#101727]'>Supercharge Your <br></br>Digital Workflow</h2>
           <p className='text-[#627382]'>Access premium AI tools, design assets, templates, and productivity<br></br> software-all in one place. Start creating faster today.Explore Products</p>
-          <button className='p-3 bg-[#4F39F6] rounded-3xl text-sm text-white hover:bg-purple-700 transition-colors font-medium'>Explore Products</button>
+          <button className='p-3 bg-[#4F39F6] rounded-3xl text-sm text-white hover:bg-purple-700 transition-colors font-medium cursor-pointer'>Explore Products</button>
           <button className='btn btn-outline btn-info rounded-3xl ml-4'> <CiPlay1></CiPlay1> Watch Demo</button>
             </div >
             {/* banner right img */}

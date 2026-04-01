@@ -14,7 +14,7 @@ const StepCard = () => {
       <section className='grid grid-cols-1 md:grid-cols-3 gap-5 container md:mx-auto my-9 mr-2 ml-2'>
         <div className=' mx-5 md:mx-0 '>
             
-         <div className="card bg-base-100 w-full relative">
+         <div className="card bg-base-100 w-full relative transition-all duration-500 hover:scale-105">
             <div className="bg-purple-500 w-8 h-8 rounded-full  absolute right-10 top-5"><span className=' text-white font-semibold left-2 absolute top-1'>01</span></div>
   <figure className="px-10 pt-10">
     <img
@@ -33,7 +33,7 @@ const StepCard = () => {
 
 
  <div className='mx-5 md:mx-0 '>
-         <div className="card bg-base-100 w-full relative ">
+         <div className="card bg-base-100 w-full relative transition-all duration-500 hover:scale-105">
             <div className="bg-purple-500 w-8 h-8 rounded-full  absolute right-10 top-5"><span className=' text-white font-semibold left-2 absolute top-1'>02</span></div>
   <figure className="px-10 pt-10">
     <img
@@ -51,7 +51,7 @@ const StepCard = () => {
 
 
  <div className='mx-5 md:mx-0'>
-         <div className="card bg-base-100  w-full relative">
+         <div className="card bg-base-100  w-full relative transition-all duration-500 hover:scale-105">
             <div className="bg-purple-500 w-8 h-8 rounded-full  absolute right-10 top-5"><span className=' text-white font-semibold left-2 absolute top-1'>03</span></div>
   <figure className="px-10 pt-10">
     <img

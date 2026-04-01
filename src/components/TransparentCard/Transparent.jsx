@@ -11,7 +11,8 @@ const Transparent = () => {
     {/* card section pricing */}
 
   <section className='grid grid-cols-1 md:grid-cols-3 md:px-20 gap-4 px-8 '>
-      <div className="card  bg-base-100 shadow-sm mx-auto container ">
+      <div className="card  bg-base-100 shadow-sm mx-auto container hover:shadow-xl hover:-translate-y-2 
+transition-all duration-300 cursor-pointer">
   <div className="card-body  ">
      {/* tittle */}
       <h2 className="text-xl font-bold text-gray-800">Starter</h2>
@@ -41,7 +42,8 @@ const Transparent = () => {
   </div>
 </div>
 
- <div className="card bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-sm mx-auto container relative">
+ <div className="card bg-linear-to-r from-[#4F39F6] to-[#9514FA] shadow-sm mx-auto container relative hover:shadow-xl hover:-translate-y-2 
+transition-all duration-300 cursor-pointer">
   <div className="card-body ">
     <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-100 px-4 py-1.5 rounded-lg whitespace-nowrap">
       <h2 className="text-amber-400 text-xs font-semibold">Most Popular</h2>
@@ -73,7 +75,8 @@ const Transparent = () => {
     </div>
   </div>
 </div>
- <div className="card  bg-base-100 shadow-sm mx-auto container">
+ <div className="card  bg-base-100 shadow-sm mx-auto container  hover:shadow-xl hover:-translate-y-2 
+transition-all duration-300 cursor-pointer">
   <div className="card-body">
      {/* tittle */}
       <h2 className="text-xl font-bold text-gray-800">Enterprise</h2>

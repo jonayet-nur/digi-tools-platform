@@ -26,13 +26,13 @@ const Navbar = ({selectcartshow}) => {
                 {/* nav right  */}
 
                 <div className='flex gap-5 items-center'>
-                <button className='relative'><FiShoppingCart></FiShoppingCart>{selectcartshow.length > 0 && (
+                <button className='relative text-2xl'><FiShoppingCart></FiShoppingCart>{selectcartshow.length > 0 && (
     <span className='absolute -top-3 -right-4 bg-violet-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold'>
       {selectcartshow.length}
     </span>
   )}</button>
                 <a href="">Login</a>
-                <button className='p-2 bg-[#4F39F6] rounded-2xl text-sm text-white hover:bg-purple-700 transition-colors font-medium md:block hidden'>Get Started</button>
+                <button className='p-2 bg-[#4F39F6] rounded-2xl text-sm text-white hover:bg-purple-700 transition-colors font-medium md:block hidden cursor-pointer'>Get Started</button>
 
 <div className="dropdown md:hidden block">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
