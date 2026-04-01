@@ -31,7 +31,7 @@ const Navbar = ({selectcartshow}) => {
       {selectcartshow.length}
     </span>
   )}</button>
-                <a href="">Login</a>
+                <a href="" className='hidden md:block'>Login</a>
                 <button className='p-2 bg-[#4F39F6] rounded-2xl text-sm text-white hover:bg-purple-700 transition-colors font-medium md:block hidden cursor-pointer'>Get Started</button>
 
 <div className="dropdown md:hidden block">
