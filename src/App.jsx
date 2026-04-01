@@ -22,7 +22,8 @@ function App() {
   //ata buy now te click korle koy ta click hoyce ata dekar jonno
   const [selectcartshow,setSelectedCartShow]= useState([])
 
-  const productPromise = fetchProduct()
+  // const productPromise = fetchProduct()
+   const [productPromise] = useState(() => fetchProduct())
   return (
     <>
     
