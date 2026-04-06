@@ -23,7 +23,7 @@ const ProductSection = ({productPromise,setSelectedCartShow,selectcartshow}) => 
         </div>
         <div className='text-center my-5'>
             <button onClick={()=> setSelectedButton("products")} className={`btn rounded-r-none rounded-l-2xl ${selectButton==="products"?"btn-primary":""}`}>Products</button> 
-        <button onClick={()=> setSelectedButton("cart")} className={`btn rounded-l-none  rounded-r-2xl ${selectButton==="cart"?"btn-primary":""}`}>Cart</button>             
+        <button onClick={()=> setSelectedButton("cart")} className={`btn rounded-l-none  rounded-r-2xl ${selectButton==="cart"?"btn-primary":""}`}>Cart ({selectcartshow.length})</button>             
 
         </div>
      {selectButton ==="products" ?<AvailableCard cardData={cardData} setSelectedCartShow={setSelectedCartShow} selectcartshow={selectcartshow} productPrice={productPrice}  setProductPrice={setProductPrice}></AvailableCard>:<SelectedCart  selectcartshow={selectcartshow}
